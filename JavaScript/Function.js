@@ -99,7 +99,6 @@ function close8(){
 
 var faq = document.getElementsByClassName("faq-page");
 var i;
-
 for (i = 0; i < faq.length; i++) {
     faq[i].addEventListener("click", function() {
         /* untuk kelas "active", bagian tombol untuk mengkontrol panel  */
@@ -117,7 +116,6 @@ for (i = 0; i < faq.length; i++) {
 
 var myIndex = 0;
 carousel();
-
 function carousel() {
   var i;
   var x = document.getElementsByClassName("slides");
