@@ -8,8 +8,9 @@
 body {
     max-width: 100%;
     margin: auto;
-    font-family: sans-serif;
+    font-family: 'Kdam Thmor Pro';
     width: 100%;
+    background-image: url('BG.png');
 }
 .row::after {
     content: "";
@@ -30,11 +31,11 @@ body {
     border: 0px;
 }
 button:hover {
-background-color: #0c092d;
-opacity: 100%;
+    background-color: #0c092d;
+    opacity: 100%;
 }
 .font {
-    font-family: 'Kdam Thmor Pro', sans-serif
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 .title{
     color: white;
@@ -53,14 +54,14 @@ opacity: 100%;
     bottom: 0;
     width: 100%;
     background-color: #130f40;
-    color: white;
     text-align: center;
     position: fixed;
-    bottom: 0;
  }
 .fc{
-    padding: 10px 0px;
-    margin: 0px
+    padding: 5px 0px;
+    margin: 0px;
+    color: white;
+    text-decoration: none;
 }
 ul {
     list-style-type: none;
@@ -69,24 +70,22 @@ ul {
     overflow: hidden;
     background-color: #130f40;
 }
-
 li {
-float: left;
+    float: left;
 }
-
 li a {
-display: block;
-color: white;
-text-align: center;
-padding: 15px 30px;
-text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
 }
 li a:hover:not(.active) {
-background-color: #0c092d;
+    background-color: #0c092d;
 }
 .active {
-background-color: #eaff00;
-color:black;
+    background-color: #eaff00;
+    color:black;
 }
 .col-1 {
     width: 8.33%;
