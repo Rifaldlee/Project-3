@@ -1,6 +1,4 @@
 function MovePage(){window.location.href="ProductPage.html"}
-function MovePage1(){window.location.href="FaqPage.html"}
-function MovePage2(){window.location.href="AboutPage.html"}
 
 function readMore1(){
   document.getElementById('description1').style.display = 'none';
@@ -97,6 +95,24 @@ function close8(){
   document.getElementById('read-more8').style.display = 'block';
   document.getElementById('more-description8').style.display = 'none';
   document.getElementById('close-button8').style.display = 'none';
+}
+
+var faq = document.getElementsByClassName("faq-page");
+var i;
+
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function() {
+        /* untuk kelas "active", bagian tombol untuk mengkontrol panel  */
+        this.classList.toggle("active");
+
+        /* menyembunyikan atau menampilkan panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
 }
 
 var myIndex = 0;
