@@ -5,23 +5,13 @@
 .mySlides {
     display: none
 }
-
+.slides{
+    margin: 30px 0;
+}
 img {
     text-align: center;
     width: 50%;
 }
-
-div {
-    border-top: 2px solid red;
-    border-left: 2px solid green;
-    border-bottom: 2px solid black;
-    border-right: 2px solid yellow;
-    padding: 10px;
-    padding-bottom: 20px;
-    text-align: left;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
 p {
     font-family: 'Kdam Thmor Pro';
     padding: 5px;
@@ -34,10 +24,8 @@ p {
 
 body {
     font-family: 'Kdam Thmor Pro';
-    max-width: 80rem;
     margin: auto;
     width: 100%;
-    background: rgb(34, 193, 195);
     background: white;
 }
 
@@ -50,9 +38,8 @@ body {
 }
 
 .content {
-    float: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .title {
@@ -62,13 +49,28 @@ body {
     color: black;
     margin-bottom: 10px;
 }
+.heading{
+    text-align: left;
+    margin: 30px 0 0 0;
+    color: #130f40;
+}
 
 .row::after {
     content: "";
     clear: both;
     display: table;
-    padding: 10px;
     border: 1px;
+}
+.description{
+    text-align: justify;
+    padding: 0 10px;
+    margin: 0;
+    color: #0c092d;
+}
+.container{
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2), -1px -1px 7px rgba(0, 0, 0, 0.2);
+    margin: 15px 0 0 0;
 }
 
 .style {
@@ -128,17 +130,24 @@ body {
     bottom: 0;
     width: 100%;
     background-color: #130f40;
-    color: white;
     text-align: center;
-    margin-top: 10px;
+    position: static;
+    margin-top: 50px;
+ }
+.fc{
+    padding: 5px 0px;
+    margin: 0px;
+    color: white;
+    text-decoration: none;
 }
-
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #130f40;
+    position: fixed;
+    width: 100%;
 }
 
 li {
